@@ -1,0 +1,33 @@
+#pragma once
+#include "lnk1.hpp"
+namespace uncon{
+  namespace unsafe{
+    inline void bwr(int addr, sbool b){
+      if (mem[addr].b1a&&mem[addr].b2a&&mem[addr].b3a&&mem[addr].b4a&&mem[addr].b5a&&mem[addr].b6a&&mem[addr].b7a&&mem[addr].b8a){
+        switch{
+          case 0:
+          mem[addr].b1 = 0;
+          mem[addr].b2 = 0;
+          mem[addr].b3 = 0;
+          mem[addr].b4 = 0;
+          mem[addr].b5 = 0;
+          mem[addr].b6 = 0;
+          mem[addr].b7 = 0;
+          mem[addr].b8 = 0;
+          break;
+        }
+          case 1:
+          mem[addr].b1 = 1;
+          mem[addr].b2 = 1;
+          mem[addr].b3 = 1;
+          mem[addr].b4 = 1;
+          mem[addr].b5 = 1;
+          mem[addr].b6 = 1;
+          mem[addr].b7 = 1;
+          mem[addr].b8 = 1;
+          break;
+        }
+      }
+    }
+  }
+}
