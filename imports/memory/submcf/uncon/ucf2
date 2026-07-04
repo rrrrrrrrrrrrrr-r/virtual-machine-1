@@ -1,0 +1,33 @@
+#pragma once
+#include "lnk1.hpp"
+namespace uncon{
+  namespace unsafe{
+    inline void alloc(int addr,unsigned char b){
+      if (mem[addr].b1a&&mem[addr].b2a&&mem[addr].b3a&&mem[addr].b4a&&mem[addr].b5a&&mem[addr].b6a&&mem[addr].b7a&&mem[addr].b8a){
+      switch{
+        case 0:
+        mem[addr].b1a=0;
+        mem[addr].b2a=0;
+        mem[addr].b3a=0;
+        mem[addr].b4a=0;
+        mem[addr].b5a=0;
+        mem[addr].b6a=0;
+        mem[addr].b7a=0;
+        mem[addr].b8a=0;
+        break;
+      }
+      case 1:
+        mem[addr].b1a=1;
+        mem[addr].b2a=1;
+        mem[addr].b3a=1;
+        mem[addr].b4a=1;
+        mem[addr].b5a=1;
+        mem[addr].b6a=1;
+        mem[addr].b7a=1;
+        mem[addr].b8a=1;
+        break;
+      }
+    }
+    }
+  }
+}
