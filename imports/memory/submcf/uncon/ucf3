@@ -10,8 +10,8 @@ namespace uncon{
         case 4:if (mem[addr].b4a){mem[addr].b4=s;} break;
         case 5:if (mem[addr].b5a){mem[addr].b5=s;} break;
         case 6:if (mem[addr].b6a){mem[addr].b6=s;} break;
-        case 7:mem[addr].b7=s;break;
-        case 8:mem[addr].b8=s;break;
+        case 7:if (mem[addr].b7a){mem[addr].b7=s;} break;
+        case 8:if (mem[addr].b8a){mem[addr].b8=s;} break;
       }
     }
   }
