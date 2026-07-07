@@ -2,7 +2,7 @@
 #include "lnk1.hpp"
 namespace uncon{
   namespace unsafe{
-    inline void sbwr(int addr,unsigned char b,unsigned char s){
+    inline void sbwr(unsigned short addr,unsigned char b,unsigned char s){
       switch(b){
         case 1:if (mem[addr].b1a){mem[addr].b1=s;} break;
         case 2:if (mem[addr].b2a){mem[addr].b2=s;} break;
