@@ -2,7 +2,7 @@
 #include "lnk2"
 namespace con{
   namespace unsafe{
-    inline void salloc(int addr,unsigned char b,unsigned char s){
+    inline void salloc(unsigned short addr,unsigned char b,unsigned char s){
       switch(b){
         case 1:mem[addr].b1a=s;break;
         case 2:mem[addr].b2a=s;break;
