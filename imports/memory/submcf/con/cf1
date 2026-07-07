@@ -3,6 +3,7 @@
 namespace con{
   namespace unsafe{
     inline void salloc(unsigned short addr,unsigned char b,unsigned char s,unsigned short addr2){
+      if(mem[addr2].raw==1){
       switch(b){
         case 1:mem[addr].b1a=s;break;
         case 2:mem[addr].b2a=s;break;
@@ -12,6 +13,7 @@ namespace con{
         case 6:mem[addr].b6a=s;break;
         case 7:mem[addr].b7a=s;break;
         case 8:mem[addr].b8a=s;break;
+      }
       }
     }
   }
