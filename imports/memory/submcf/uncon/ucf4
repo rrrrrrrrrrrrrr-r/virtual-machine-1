@@ -2,7 +2,7 @@
 #include "lnk1.hpp"
 namespace uncon{
   namespace unsafe{
-    inline void bwr(int addr, sbool b){
+    inline void bwr(unsigned short addr,bool b){
       if (mem[addr].b1a&&mem[addr].b2a&&mem[addr].b3a&&mem[addr].b4a&&mem[addr].b5a&&mem[addr].b6a&&mem[addr].b7a&&mem[addr].b8a){
         switch{
           case 0:
