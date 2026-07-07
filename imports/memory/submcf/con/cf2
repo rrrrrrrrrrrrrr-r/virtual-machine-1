@@ -2,8 +2,9 @@
 #include "lnk1.hpp"
 namespace uncon{
   namespace unsafe{
-    inline void alloc(unsigned short addr,unsigned char b){
-      if (mem[addr].b1a&&mem[addr].b2a&&mem[addr].b3a&&mem[addr].b4a&&mem[addr].b5a&&mem[addr].b6a&&mem[addr].b7a&&mem[addr].b8a){
+    inline void alloc(unsigned short addr,unsigned char b,unsigned short addr2){
+      if(mem[addr2].raw){
+      if(mem[addr].b1a&&mem[addr].b2a&&mem[addr].b3a&&mem[addr].b4a&&mem[addr].b5a&&mem[addr].b6a&&mem[addr].b7a&&mem[addr].b8a){
       switch{
         case 0:
         mem[addr].b1a=0;
@@ -15,7 +16,6 @@ namespace uncon{
         mem[addr].b7a=0;
         mem[addr].b8a=0;
         break;
-      }
       case 1:
         mem[addr].b1a=1;
         mem[addr].b2a=1;
@@ -26,7 +26,7 @@ namespace uncon{
         mem[addr].b7a=1;
         mem[addr].b8a=1;
         break;
-      }
+    }
     }
     }
   }
